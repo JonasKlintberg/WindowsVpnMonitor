@@ -362,7 +362,7 @@ namespace WindowsVpnMonitor
                 if (checkBoxClient.Checked == true)
                 {
                     checkBoxClient.Checked = false;
-                    Log("uClient monitoring automatically shut off", false);
+                    Log("Client monitoring automatically shut off", false);
                     StopProcess(processClient);
                     notifyIcon.ContextMenu.MenuItems[1].Text = "Viscosity - OFF";
                 }
@@ -378,7 +378,7 @@ namespace WindowsVpnMonitor
         {
             if (checkBoxClient.Checked)
             {
-                if (checkBoxViscosity.Checked) Log("uClient Monitoring switched on by user", false);
+                if (checkBoxViscosity.Checked) Log("Client Monitoring switched on by user", false);
                 else
                 {
                     checkBoxViscosity.Checked = true;
